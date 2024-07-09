@@ -1,0 +1,15 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "algum serviço 2",
+    "description": "qualquer descrição",
+    "price": 1700,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmx_bHDlYJaTwwJEitwR6CX-exGpKTRJ6WQ&s"
+}
+
+### 
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/localhost:3000/api/services/6670888c421040d3a0a9efff
