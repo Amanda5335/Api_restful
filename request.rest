@@ -2,9 +2,9 @@ POST http://localhost:3000/api/services
 Content-Type: application/json
 
 {
-    "name": "algum serviço 2",
-    "description": "qualquer descrição",
-    "price": 1700,
+    "name": " serviço 7",
+    "description": " descrição",
+    "price": 3000,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmx_bHDlYJaTwwJEitwR6CX-exGpKTRJ6WQ&s"
 }
 
@@ -12,4 +12,81 @@ Content-Type: application/json
 GET http://localhost:3000/api/services
 
 ###
-GET http://localhost:3000/localhost:3000/api/services/6670888c421040d3a0a9efff
+GET http://localhost:3000/localhost:3000/api/services/66a00f2c6df4a965ef4ad827
+
+###
+DELETE http://localhost:3000/localhost:3000/api/services/669805f96f9cfa348ece32fa
+
+###
+PUT http://localhost:3000/api/services/66981dc73ba3aef695d131a4
+Content-Type: application/json
+
+{
+    "name": "algum TESTE 4",
+    "description": "qualquer descrição",
+    "price": 2800,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmx_bHDlYJaTwwJEitwR6CX-exGpKTRJ6WQ&s"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "my event 2",
+    "author": "Matheus",
+    "description": "festa aniversário",
+    "budget": 9000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmx_bHDlYJaTwwJEitwR6CX-exGpKTRJ6WQ&s",
+    "services": [
+        {
+            
+    "name": " servico1",
+    "description": " descrição",
+    "price": 1000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmx_bHDlYJaTwwJEitwR6CX-exGpKTRJ6WQ&s"
+        },
+        {
+    "name": " servico2",
+    "description": " descrição",
+    "price": 4000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmx_bHDlYJaTwwJEitwR6CX-exGpKTRJ6WQ&s"
+        }
+    ]
+}
+
+### 
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/66a010f10f79cd453da5dc1d
+
+###
+DELETE http://localhost:3000/api/parties/66a011060f79cd453da5dc1f
+
+###
+PUT http://localhost:3000/api/parties/66a010f10f79cd453da5dc1d
+Content-Type: application/json
+
+{
+    "title": "my event 1",
+    "author": "Matheus",
+    "description": "festa aniversário",
+    "budget": 10000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmx_bHDlYJaTwwJEitwR6CX-exGpKTRJ6WQ&s",
+    "services": [
+        {
+            
+    "name": " servico1",
+    "description": " descrição",
+    "price": 1000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmx_bHDlYJaTwwJEitwR6CX-exGpKTRJ6WQ&s"
+        },
+        {
+    "name": " servico2",
+    "description": " descrição",
+    "price": 4000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmx_bHDlYJaTwwJEitwR6CX-exGpKTRJ6WQ&s"
+        }
+    ]
+}
